@@ -88,73 +88,75 @@ fake_projct = fake-repo-link-rewriting
   
 # INCLUDED IN FETCH
 
-* content_line: \!\[in repo with protocol with filename](https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
+* content_line: \!\[in repo with protocol with filename]\(https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
 * ![in repo with protocol with filename](https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
 
-* content_line: \!\[in repo with weird protocol with filename](file://github.com/johntrandall/fake-repo-link-rewriting/in_repo_weird_protocol_with_filename.jpg) included in fetch,
+* content_line: \!\[in repo with weird protocol with filename]\(file://github.com/johntrandall/fake-repo-link-rewriting/in_repo_weird_protocol_with_filename.jpg) included in fetch,
 * ![in repo with weird protocol with filename](file://github.com/johntrandall/fake-repo-link-rewriting/in_repo_weird_protocol_with_filename.jpg) included in fetch,
 
-* content_line: \!\[in repo with protocol with filename subfoldered](https://github.com/johntrandall/fake-repo-link-rewriting/path/to/in_repo_with_protocol_with_filename_subfoldered.jpg) included in fetch,
+* content_line: \!\[in repo with protocol with filename subfoldered]\(https://github.com/johntrandall/fake-repo-link-rewriting/path/to/in_repo_with_protocol_with_filename_subfoldered.jpg) included in fetch,
 * ![in repo with protocol with filename subfoldered](https://github.com/johntrandall/fake-repo-link-rewriting/path/to/in_repo_with_protocol_with_filename_subfoldered.jpg) included in fetch,
 
-* content_line: \!\[in repo with protocol with branch with filename](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/in_repo_with_protocol_with_branch_with_filename.jpg) included in fetch,
+* content_line: \!\[in repo with protocol with branch with filename]\(https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/in_repo_with_protocol_with_branch_with_filename.jpg) included in fetch,
 * ![in repo with protocol with branch with filename](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/in_repo_with_protocol_with_branch_with_filename.jpg) included in fetch,
 
-* content_line: \!\[in repo with protocol with branch with filename subfoldered](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered.jpg) included in fetch,
+* content_line: \!\[in repo with protocol with branch with filename subfoldered]\(https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered.jpg) included in fetch,
 * ![in repo with protocol with branch with filename subfoldered](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered.jpg) included in fetch,
 
-* content_line: \!\[in repo with protocol with branch with filename subfoldered with anchor and query](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X) included in fetch,
+* content_line: \!\[in repo with protocol with branch with filename subfoldered with anchor and query]\(https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X) included in fetch,
 * ![in repo with protocol with branch with filename subfoldered with anchor and query](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X) included in fetch,
 
-* content_line: \!\[relative to repo root](/relative_to_repo_root.jpg) included in fetch,
+* content_line: \!\[relative to repo root]\(/relative_to_repo_root.jpg) included in fetch,
 * ![relative to repo root](/relative_to_repo_root.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct sibling](relative_to_markdown_direct_sibling.jpg) included in fetch,
-* ![relative to containing markdown - direct sibling](relative_to_markdown_direct_sibling.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - direct sibling]\(relative_to_markdown_direct_sibling.jpg) included in fetch,
+* ![relative to containing markdown - direct sibling]\(relative_to_markdown_direct_sibling.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct sibling subfoldered](subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - direct sibling subfoldered]\(subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
 * ![relative to containing markdown - direct sibling subfoldered](subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - cousin subfoldered (down one up one)](../subfolder/relative_to_markdown_cousin_subfoldered.jpg) included in fetch,
+FIX ME
+* content_line: \!\[relative to containing markdown - cousin subfoldered
+* (down one up one)](../subfolder/relative_to_markdown_cousin_subfoldered.jpg) included in fetch,
 * ![relative to containing markdown - cousin subfoldered (down one up one)](../subfolder/relative_to_markdown_cousin_subfoldered.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct sibling subfoldered with confusing folder name](github.com/relative_to_markdown_direct_sibling_subfoldered_with_confusing_folder_name.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - direct sibling subfoldered with confusing folder name]\(github.com/relative_to_markdown_direct_sibling_subfoldered_with_confusing_folder_name.jpg) included in fetch,
 * ![relative to containing markdown - direct sibling subfoldered with confusing folder name](github.com/relative_to_markdown_direct_sibling_subfoldered_with_confusing_folder_name.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - dot slash ](./relative_to_markdown_dot_slash.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - dot slash ]\(./relative_to_markdown_dot_slash.jpg) included in fetch,
 * ![relative to containing markdown - dot slash ](./relative_to_markdown_dot_slash.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - dot slash subfoldered](./subfolder/relative_to_markdown_dot_slash_subfoldered.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - dot slash subfoldered]\(./subfolder/relative_to_markdown_dot_slash_subfoldered.jpg) included in fetch,
 * ![relative to containing markdown - dot slash subfoldered](./subfolder/relative_to_markdown_dot_slash_subfoldered.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - dot slash subfoldered with confusing folder name](./github.com/relative_to_markdown_dot_slash_subfoldered_with_confusing_folder_name.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - dot slash subfoldered with confusing folder name]\(./github.com/relative_to_markdown_dot_slash_subfoldered_with_confusing_folder_name.jpg) included in fetch,
 * ![relative to containing markdown - dot slash subfoldered with confusing folder name](./github.com/relative_to_markdown_dot_slash_subfoldered_with_confusing_folder_name.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - in repo up one](../relative_to_containing_markdown_up_one.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - in repo up one]\(../relative_to_containing_markdown_up_one.jpg) included in fetch,
 * ![relative to containing markdown - in repo up one](../relative_to_containing_markdown_up_one.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - in repo up two](../../relative_to_containing_markdown_up_two.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - in repo up two]\(../../relative_to_containing_markdown_up_two.jpg) included in fetch,
 * ![relative to containing markdown - in repo up two](../../relative_to_containing_markdown_up_two.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - up past root](../../../../relative_to_containing_markdown_up_past_root.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - up past root]\(../../../../relative_to_containing_markdown_up_past_root.jpg) included in fetch,
 * ![relative to containing markdown - up past root](../../../../relative_to_containing_markdown_up_past_root.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct duplicate](relative_to_markdown_direct_duplicate.jpg) included in fetch,
+* content_line: \!\[relative to containing markdown - direct duplicate]\(relative_to_markdown_direct_duplicate.jpg) included in fetch,
 * ![relative to containing markdown - direct duplicate](relative_to_markdown_direct_duplicate.jpg) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct with video](relative_to_markdown_direct_video.mp4) included in fetch,
+* content_line: \!\[relative to containing markdown - direct with video]\(relative_to_markdown_direct_video.mp4) included in fetch,
 * ![relative to containing markdown - direct with video](relative_to_markdown_direct_video.mp4) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct with anchor](relative_to_markdown_direct_anchor.jpg#anchor) included in fetch,
+* content_line: \!\[relative to containing markdown - direct with anchor]\(relative_to_markdown_direct_anchor.jpg#anchor) included in fetch,
 * ![relative to containing markdown - direct with anchor](relative_to_markdown_direct_anchor.jpg#anchor) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct with query parmas](relative_to_markdown_direct_query.jpg?query) included in fetch,
+* content_line: \!\[relative to containing markdown - direct with query parmas]\(relative_to_markdown_direct_query.jpg?query) included in fetch,
 * ![relative to containing markdown - direct with query parmas](relative_to_markdown_direct_query.jpg?query) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct with query and anchor](relative_to_markdown_direct_query_and_anchor.jpg?query#anchor) included in fetch,
+* content_line: \!\[relative to containing markdown - direct with query and anchor]\(relative_to_markdown_direct_query_and_anchor.jpg?query#anchor) included in fetch,
 * ![relative to containing markdown - direct with query and anchor](relative_to_markdown_direct_query_and_anchor.jpg?query#anchor) included in fetch,
 
-* content_line: \!\[relative to containing markdown - direct with anchor and query](relative_to_markdown_direct_anchor_and_query.jpg#anchor?query) included in fetch,
+* content_line: \!\[relative to containing markdown - direct with anchor and query]\(relative_to_markdown_direct_anchor_and_query.jpg#anchor?query) included in fetch,
 * ![relative to containing markdown - direct with anchor and query](relative_to_markdown_direct_anchor_and_query.jpg#anchor?query) included in fetch,
 
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
