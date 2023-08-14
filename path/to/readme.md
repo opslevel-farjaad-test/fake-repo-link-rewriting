@@ -98,6 +98,8 @@
 # INCLUDED Markdown
 
 ## FULL PROTOCOL
+* _From main branch - THESE DO NOT WORK IN GITHUB_
+
 * content_line: \!\[in repo with protocol with filename]\(https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
     * ![in repo with protocol with filename](https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
 
@@ -172,7 +174,7 @@
 # INCLUDED HTML
 
 ## FULL PROTOCOL - from Main
-* THESE DO NOT WORK IN GITHUB
+* _From main branch - THESE DO NOT WORK IN GITHUB_
 
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
     * <img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
