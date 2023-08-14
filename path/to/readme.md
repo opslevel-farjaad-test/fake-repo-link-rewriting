@@ -171,7 +171,9 @@
 
 # INCLUDED HTML
 
-## FULL PROTOCOL
+## FULL PROTOCOL - from Main
+* THESE DO NOT WORK IN GITHUB
+
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
     * <img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
 
