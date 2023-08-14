@@ -1,9 +1,9 @@
-fake_org = johntrandall
-fake_projct = fake-repo-link-rewriting
+* fake_org = johntrandall
+* fake_projct = fake-repo-link-rewriting
 
 
 
-# excluded from fetch FROM FETCH
+# EXCLUDED FROM FETCH
 
 * content_line: derp derp,
     * derp serp,
@@ -89,6 +89,9 @@ fake_projct = fake-repo-link-rewriting
 
 * content_line: \<img src="excluded from fetch.md" alt="tag relative to containing markdown - direct wrong extension markdown"> excluded from fetch,
     * <img src="excluded from fetch.md" alt="tag relative to containing markdown - direct wrong extension markdown"> excluded from fetch,
+  
+  
+  
   
 # INCLUDED IN FETCH
 
