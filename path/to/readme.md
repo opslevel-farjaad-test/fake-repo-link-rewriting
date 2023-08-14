@@ -6,85 +6,85 @@ fake_projct = fake-repo-link-rewriting
 # excluded from fetch FROM FETCH
 
 * content_line: derp derp,
-      * derp serp,
+    * derp serp,
 
 * content_line: "I am not markdown link.",
-      * "I am not markdown link.",
+    * "I am not markdown link.",
 
 * content_line: \!\[different domain different path with protocol no filename](http://google.com) excluded from fetch,
-      * ![different domain different path with protocol no filename](http://google.com) excluded from fetch,
+    * ![different domain different path with protocol no filename](http://google.com) excluded from fetch,
 
 * content_line: \!\[different domain different path with protocol with filename](http://google.com/excluded from fetch.jpg) excluded from fetch,
-      * ![different domain different path with protocol with filename](http://google.com/excluded from fetch.jpg) excluded from fetch,
+    * ![different domain different path with protocol with filename](http://google.com/excluded from fetch.jpg) excluded from fetch,
 
 * content_line: \!\[different domain same path with protocol no filename](http://google.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
-      * ![different domain same path with protocol no filename](http://google.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
+    * ![different domain same path with protocol no filename](http://google.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
 
 * content_line: \!\[different domain same path with protocol with filename](http://google.com/johntrandall/fake-repo-link-rewriting/excluded from fetch.jpg) excluded from fetch,
-      * ![different domain same path with protocol with filename](http://google.com/johntrandall/fake-repo-link-rewriting/excluded from fetch.jpg) excluded from fetch,
+    * ![different domain same path with protocol with filename](http://google.com/johntrandall/fake-repo-link-rewriting/excluded from fetch.jpg) excluded from fetch,
 
 * content_line: \!\[same domain different path with protocol no filename](http://github.com) excluded from fetch,
-      * ![same domain different path with protocol no filename](http://github.com) excluded from fetch,
+    * ![same domain different path with protocol no filename](http://github.com) excluded from fetch,
 
 * content_line: \!\[same domain different path with protocol with filename](http://github.com/excluded from fetch.jpg) excluded from fetch,
-      * ![same domain different path with protocol with filename](http://github.com/excluded from fetch.jpg) excluded from fetch,
+    * ![same domain different path with protocol with filename](http://github.com/excluded from fetch.jpg) excluded from fetch,
 
 * content_line: \!\[in repo with protocol no filename](https://github.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
-      * ![in repo with protocol no filename](https://github.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
+    * ![in repo with protocol no filename](https://github.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
 
 * content_line: \!\[in repo with weird protocol no filename](file://github.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
-      * ![in repo with weird protocol no filename](file://github.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
+    * ![in repo with weird protocol no filename](file://github.com/johntrandall/fake-repo-link-rewriting) excluded from fetch,
 
 * content_line: \!\[relative to containing markdown - direct wrong extension bitmap](excluded from fetch.bmp) excluded from fetch,
-      * ![relative to containing markdown - direct wrong extension bitmap](excluded from fetch.bmp) excluded from fetch,
+    * ![relative to containing markdown - direct wrong extension bitmap](excluded from fetch.bmp) excluded from fetch,
 
 * content_line: \!\[relative to containing markdown - direct wrong extension markdown](excluded from fetch.md) excluded from fetch,
-      * ![relative to containing markdown - direct wrong extension markdown](excluded from fetch.md) excluded from fetch,
+    * ![relative to containing markdown - direct wrong extension markdown](excluded from fetch.md) excluded from fetch,
 
 * content_line: \!\[relative to containing markdown - direct no bang](excluded from fetch.jpg) excluded from fetch",
-      * "[relative to containing markdown - direct no bang](excluded from fetch.jpg) excluded from fetch",
+    * "[relative to containing markdown - direct no bang](excluded from fetch.jpg) excluded from fetch",
 
 * content_line: \!\[relative to containing markdown - direct duplicate](relative_to_markdown_direct_duplicate.jpg) excluded from fetch,
-      * ![relative to containing markdown - direct duplicate](relative_to_markdown_direct_duplicate.jpg) excluded from fetch,
+    * ![relative to containing markdown - direct duplicate](relative_to_markdown_direct_duplicate.jpg) excluded from fetch,
 
 * content_line: \!\[relative to containing markdown - direct duplicate2](relative_to_markdown_direct_duplicate.jpg) excluded from fetch",
-      * '![relative to containing markdown - direct duplicate2](relative_to_markdown_direct_duplicate.jpg) excluded from fetch",
+    * '![relative to containing markdown - direct duplicate2](relative_to_markdown_direct_duplicate.jpg) excluded from fetch",
 
 * content_line: \<img src="http://google.com" alt="tag different domain different path with protocol"> excluded from fetch,
-      * <img src="http://google.com" alt="tag different domain different path with protocol"> excluded from fetch,
+    * <img src="http://google.com" alt="tag different domain different path with protocol"> excluded from fetch,
 
 * content_line: \<img src="http://google.com/excluded from fetch.jpg" alt="tag different domain different path with protocol with filename"> excluded from fetch,
-      * <img src="http://google.com/excluded from fetch.jpg" alt="tag different domain different path with protocol with filename"> excluded from fetch,
+    * <img src="http://google.com/excluded from fetch.jpg" alt="tag different domain different path with protocol with filename"> excluded from fetch,
 
 * content_line: \<img src="http://google.com/johntrandall/fake-repo-link-rewriting" alt="tag different domain same path with protocol"> excluded from fetch,
-      * <img src="http://google.com/johntrandall/fake-repo-link-rewriting" alt="tag different domain same path with protocol"> excluded from fetch,
+    * <img src="http://google.com/johntrandall/fake-repo-link-rewriting" alt="tag different domain same path with protocol"> excluded from fetch,
 
 * content_line: \<img src="http://google.com/johntrandall/fake-repo-link-rewriting/excluded from fetch.jpg" alt="tag different domain same path with protocol with filename"> excluded from fetch,
-      * <img src="http://google.com/johntrandall/fake-repo-link-rewriting/excluded from fetch.jpg" alt="tag different domain same path with protocol with filename"> excluded from fetch,
+    * <img src="http://google.com/johntrandall/fake-repo-link-rewriting/excluded from fetch.jpg" alt="tag different domain same path with protocol with filename"> excluded from fetch,
 
 * content_line: \<img src="http://github.com" alt="tag same domain different path with protocol no filename"> excluded from fetch,
-      * <img src="http://github.com" alt="tag same domain different path with protocol no filename"> excluded from fetch,
+    * <img src="http://github.com" alt="tag same domain different path with protocol no filename"> excluded from fetch,
 
 * content_line: \<img src="http://github.com/excluded from fetch.jpg" alt="tag same domain different path with protocol with filename"> excluded from fetch,
-      * <img src="http://github.com/excluded from fetch.jpg" alt="tag same domain different path with protocol with filename"> excluded from fetch,
+    * <img src="http://github.com/excluded from fetch.jpg" alt="tag same domain different path with protocol with filename"> excluded from fetch,
 
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting" alt="tag in repo with protocol no filename"> excluded from fetch,
-      * <img src="https://github.com/johntrandall/fake-repo-link-rewriting" alt="tag in repo with protocol no filename"> excluded from fetch,
+    * <img src="https://github.com/johntrandall/fake-repo-link-rewriting" alt="tag in repo with protocol no filename"> excluded from fetch,
   
 * content_line: \<img src="file://github.com/johntrandall/fake-repo-link-rewriting" alt="tag in repo with weird protocol no filename"> excluded from fetch,
-      * <img src="file://github.com/johntrandall/fake-repo-link-rewriting" alt="tag in repo with weird protocol no filename"> excluded from fetch,
+    * <img src="file://github.com/johntrandall/fake-repo-link-rewriting" alt="tag in repo with weird protocol no filename"> excluded from fetch,
 
 * content_line: \<img src="tag_relative_to_markdown_direct_duplicate.jpg" alt="tag relative to containing markdown - direct"> ",
-      * <img src="tag_relative_to_markdown_direct_duplicate.jpg" alt="tag relative to containing markdown - direct"> ",
+    * <img src="tag_relative_to_markdown_direct_duplicate.jpg" alt="tag relative to containing markdown - direct"> ",
 
 * content_line: \<img src="tag_relative_to_markdown_direct_duplicate.jpg" alt="tag relative to containing markdown - direct2"> ",
-      * <img src="tag_relative_to_markdown_direct_duplicate.jpg" alt="tag relative to containing markdown - direct2"> ",
+    * <img src="tag_relative_to_markdown_direct_duplicate.jpg" alt="tag relative to containing markdown - direct2"> ",
 
 * content_line: \<img src="excluded from fetch.bmp" alt="tag relative to containing markdown - direct wrong extension bitmap"> excluded from fetch,
-      * <img src="excluded from fetch.bmp" alt="tag relative to containing markdown - direct wrong extension bitmap"> excluded from fetch,
+    * <img src="excluded from fetch.bmp" alt="tag relative to containing markdown - direct wrong extension bitmap"> excluded from fetch,
 
 * content_line: \<img src="excluded from fetch.md" alt="tag relative to containing markdown - direct wrong extension markdown"> excluded from fetch,
-      * <img src="excluded from fetch.md" alt="tag relative to containing markdown - direct wrong extension markdown"> excluded from fetch,
+    * <img src="excluded from fetch.md" alt="tag relative to containing markdown - direct wrong extension markdown"> excluded from fetch,
   
 # INCLUDED IN FETCH
 
