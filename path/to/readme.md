@@ -96,6 +96,8 @@
 # INCLUDED IN FETCH
 
 # INCLUDED Markdown
+
+## FULL PROTOCOL
 * content_line: \!\[in repo with protocol with filename]\(https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
     * ![in repo with protocol with filename](https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
 
@@ -114,6 +116,7 @@
 * content_line: \!\[in repo with protocol with branch with filename subfoldered with anchor and query]\(https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X) included in fetch,
     * ![in repo with protocol with branch with filename subfoldered with anchor and query](https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X) included in fetch,
 
+## RELATIVE 
 * content_line: \!\[relative to repo root]\(/relative_to_repo_root.jpg) included in fetch,
     * ![relative to repo root](/relative_to_repo_root.jpg) included in fetch,
 
@@ -168,6 +171,7 @@
 
 # INCLUDED HTML
 
+## FULL PROTOCOL
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
     * <img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
 
@@ -186,6 +190,8 @@
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/tag_in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X" alt="tag in repo with protocol with branch with filename subfoldered with anchor and query"> included in fetch,
     * <img src="https://github.com/johntrandall/fake-repo-link-rewriting/blob/main/path/to/tag_in_repo_with_protocol_with_branch_with_filename_subfoldered_with_anchor_and_query.jpg#anchor?query=X" alt="tag in repo with protocol with branch with filename subfoldered with anchor and query"> included in fetch,
 
+  
+## RELATIVE
 * content_line: \<img src="/tag_relative_to_repo_root.jpg" alt="tag relative to repo root"> included in fetch,
     * <img src="/tag_relative_to_repo_root.jpg" alt="tag relative to repo root"> included in fetch,
 
