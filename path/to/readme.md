@@ -118,7 +118,7 @@
     * ![relative to repo root](/relative_to_repo_root.jpg) included in fetch,
 
 * content_line: \!\[relative to containing markdown - direct sibling]\(relative_to_markdown_direct_sibling.jpg) included in fetch,
-    * ![relative to containing markdown - direct sibling]\(relative_to_markdown_direct_sibling.jpg) included in fetch,
+    * ![relative to containing markdown - direct sibling](relative_to_markdown_direct_sibling.jpg) included in fetch,
 
 * content_line: \!\[relative to containing markdown - direct sibling subfoldered]\(subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
     * ![relative to containing markdown - direct sibling subfoldered](subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
