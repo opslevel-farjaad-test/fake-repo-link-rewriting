@@ -11,6 +11,7 @@ fake_projct = fake-repo-link-rewriting
 * content_line: "I am not markdown link.",
     * "I am not markdown link.",
 
+# EXCLUDED - Markdown
 * content_line: \!\[different domain different path with protocol no filename](http://google.com) excluded from fetch,
     * ![different domain different path with protocol no filename](http://google.com) excluded from fetch,
 
@@ -50,6 +51,9 @@ fake_projct = fake-repo-link-rewriting
 * content_line: \!\[relative to containing markdown - direct duplicate2](relative_to_markdown_direct_duplicate.jpg) excluded from fetch",
     * '![relative to containing markdown - direct duplicate2](relative_to_markdown_direct_duplicate.jpg) excluded from fetch",
 
+
+
+# EXCLUDED - HTML
 * content_line: \<img src="http://google.com" alt="tag different domain different path with protocol"> excluded from fetch,
     * <img src="http://google.com" alt="tag different domain different path with protocol"> excluded from fetch,
 
@@ -88,6 +92,7 @@ fake_projct = fake-repo-link-rewriting
   
 # INCLUDED IN FETCH
 
+# INCLUDED Markdown
 * content_line: \!\[in repo with protocol with filename]\(https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
     * ![in repo with protocol with filename](https://github.com/johntrandall/fake-repo-link-rewriting/in_repo_with_protocol_with_filename.jpg) included in fetch,
 
@@ -115,10 +120,8 @@ fake_projct = fake-repo-link-rewriting
 * content_line: \!\[relative to containing markdown - direct sibling subfoldered]\(subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
     * ![relative to containing markdown - direct sibling subfoldered](subfolder/relative_to_markdown_direct_sibling_subfoldered.jpg) included in fetch,
 
-FIX ME
-* content_line: \!\[relative to containing markdown - cousin subfoldered
-    * (down one up one)](../subfolder/relative_to_markdown_cousin_subfoldered.jpg) included in fetch,
-* ![relative to containing markdown - cousin subfoldered (down one up one)](../subfolder/relative_to_markdown_cousin_subfoldered.jpg) included in fetch,
+* content_line: !\[relative to containing markdown - cousin subfoldered \(down one up one)]\(../subfolder/relative_to_markdown_cousin_subfoldered.jpg) INCLUDED,
+    * ![relative to containing markdown - cousin subfoldered (down one up one)](../subfolder/relative_to_markdown_cousin_subfoldered.jpg) INCLUDED,
 
 * content_line: \!\[relative to containing markdown - direct sibling subfoldered with confusing folder name]\(github.com/relative_to_markdown_direct_sibling_subfoldered_with_confusing_folder_name.jpg) included in fetch,
     * ![relative to containing markdown - direct sibling subfoldered with confusing folder name](github.com/relative_to_markdown_direct_sibling_subfoldered_with_confusing_folder_name.jpg) included in fetch,
@@ -158,6 +161,9 @@ FIX ME
 
 * content_line: \!\[relative to containing markdown - direct with anchor and query]\(relative_to_markdown_direct_anchor_and_query.jpg#anchor?query) included in fetch,
     * ![relative to containing markdown - direct with anchor and query](relative_to_markdown_direct_anchor_and_query.jpg#anchor?query) included in fetch,
+
+
+# INCLUDED HTML
 
 * content_line: \<img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
     * <img src="https://github.com/johntrandall/fake-repo-link-rewriting/tag_in_repo_with_protocol_with_filename.jpg" alt="tag in repo with protocol with filename"> included in fetch,
