@@ -1,0 +1,17 @@
+---
+version: 1
+service:
+  name: mismatch opslevel.yml
+  lifecycle: generally_available
+  tier:
+  product: Alerting Pipeline
+  owner: backend_team
+  system: platformsystem1
+  language: JavaScript
+  framework: React
+  description: UI that people interact with to see products and place orders
+  aliases:
+  tags:
+  dependencies:
+  properties:
+
